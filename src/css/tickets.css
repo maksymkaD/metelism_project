@@ -1,0 +1,24 @@
+#tickets-table {
+    text-align: center;
+    display: block;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    font-weight: 50;
+    width: 300px;
+    color: #000;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+}
+
+#tickets-table tr td:nth-child(2) {
+    width: 33%
+}
+
+#tickets-table tr td:nth-child(3) {
+    width: 33%
+}
+
+#tickets-table tr td:nth-child(4) {
+    width: 33%
+}

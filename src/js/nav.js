@@ -1,6 +1,3 @@
-
-
-
 ///////////////////////////////// ANIMATEANYTHING.JS /////////////////////////////////
 
 // adapted from: http://gsgd.co.uk/sandbox/jquery/easing/

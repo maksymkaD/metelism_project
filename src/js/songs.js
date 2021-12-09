@@ -7,6 +7,12 @@ data = {
             "url" : "https://lastfm.freetls.fastly.net/i/u/ar0/f06cc865ce263cbac258a453407e1110.jpg"
         },
         {
+            "name": "Posle Menya",
+            "album": "Dancing in the Black Dome",
+            "released_at" : 2017,
+            "url" : "https://is2-ssl.mzstatic.com/image/thumb/Music124/v4/36/3b/3d/363b3dde-70e7-079b-bc06-91457e3a3fc5/cover.jpg/1200x1200bf-60.jpg"
+        },
+        {
             "name": "Buket",
             "album": "Verhovod",
             "released_at" : 2016,

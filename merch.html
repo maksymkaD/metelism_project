@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--metadata-->
+    <meta name="description" content="Merch selling page of Ukrainian underground punk band Metel" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <title>Buy Merch</title>
+    <!--resourses-->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/merch.css">
+    <link rel="icon" href="src/img/icon.jpg" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="navbar2">
+        <div>
+            <img class="podmost-gif-middle" src="src/img/icon.png" alt="NO ICON" />
+            <span class="navlink2 title">MERCH</span>
+        </div>
+    </div>
+
+    <article class="main">
+        <div class="text">
+            <h2>Merch catalog</h2>
+            <div id="searchDiv">
+                <input id="search" type="text" placeholder="Search..">
+                <button onclick="search()">Search</button>
+            </div>
+            <p class="paragraph">Catalogue of currently available merch. 
+                To be honest, i didn`t knew where to add search because all the catalogues are too small, but here it is :)</p>
+            <table id="tickets-table" style="font-size: 20px;">
+                <thead class="topSongsThead">
+                    <tr style="width: 100%;  font-weight: bolder;">
+                        
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!--example-->
+                    <tr class="itemContainer">
+                        <td><img width="100" height="100" src="src/img/icon.png" alt="NO ICON" /></td>
+                        <td class="nameOfItem">Cap</td>
+                        <td><b>Material:</b> some stones idk <br> <b>Price</b>: 420 UAH</td>
+                        <td>
+                            <form action="LINK TO SOME CONCERT WEBSITE">
+                                <button>Buy</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr class="itemContainer">
+                        <td><img width="100" height="100" src="src/img/icon.jpg" alt="NO ICON" /></td>
+                        <td class="nameOfItem">Hoodie</td>
+                        <td><b>Material</b>: 100% metal<br> <b>Price</b>: 1000 UAH</td>
+                        <td>
+                            <form action="LINK TO SOME CONCERT WEBSITE">
+                                <button>Buy</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr class="itemContainer">
+                        <td><img width="100" height="100" src="src/img/icon.png" alt="NO ICON" /></td>
+                        <td class="nameOfItem">T-Shirt</td>
+                        <td><b>Material</b>: 10% poliester 90% cotton<br> <b>Price</b>: 666 UAH</td>
+                        <td>
+                            <form action="LINK TO SOME MERCH WEBSITE">
+                                <button>Buy</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+    <script type="text/javascript" src="src/js/search.js">
+    </script>
+</body>
+
+</html>

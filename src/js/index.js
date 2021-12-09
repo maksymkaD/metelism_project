@@ -68,7 +68,7 @@ function sortByAlbum(songs) {
 
 function sortByDate(songs) {
     songs = songs.sort((a,b)=>{
-        return a - b;
+        return a.released_at - b.released_at;
     });
     getSongs(songs);
 }

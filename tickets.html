@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--metadata-->
+    <meta name="description" content="Buy tickets on concert of Ukrainian underground punk band Metel" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <title>Buy Tickets</title>
+    <!--resourses-->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/tickets.css">
+    <link rel="icon" href="src/img/icon.jpg" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="navbar2">
+        <div>
+            <img class="podmost-gif-middle" src="src/img/icon.png" alt="NO ICON" />
+            <span id="tickets" class="navlink2 title">TICKETS</span>
+        </div>
+    </div>
+
+    <article class="main">
+        <div class="text">
+            <h2 align="center">Long&Happy Life Tour</h2>
+            <p class="paragraph" align="center">Band`s tour is starting soon, don`t miss your chance and buy a ticket. 
+                Please note that we are not in charge of selling tickets.</p>
+            <table id="tickets-table" style="font-size: 20px;">
+                <thead class="topSongsThead">
+                    <tr style="width: 100%;  font-weight: bolder;">
+                        <td>
+                            <div id="sortby" style="width: 100px; text-align: left;"></div>
+                            <!--Fill empty cell-->
+                        </td>
+                        <td class="sort" onclick="sortBySong(data.songs)">City</td>
+                        <td class="sort">Date</td>
+                        <td class="sort"></td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!--example-->
+                    <tr>
+                        <td><img width="100" height="100" src="src/img/icon.png"
+                                alt="NO ICON" /></td>
+                        <td>Kyiv</td>
+                        <td>32.12.2021</td>
+                        <td>
+                            <form action="LINK TO SOME CONCERT">
+                                <button>Buy</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img width="100" height="100" src="src/img/icon.jpg"
+                                alt="NO ICON" /></td>
+                        <td>Kharkiv</td>
+                        <td>32.12.2021</td>
+                        <td>
+                            <form action="LINK TO SOME CONCERT">
+                                <button>Buy</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img width="100" height="100" src="src/img/icon.png"
+                                alt="NO ICON" /></td>
+                        <td>Lviv</td>
+                        <td>32.12.2021</td>
+                        <td>
+                            <form action="LINK TO SOME CONCERT">
+                                <button>Buy</button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </article>
+</body>
+
+</html>

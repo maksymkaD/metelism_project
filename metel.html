@@ -11,7 +11,13 @@
     <!--resourses-->
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="icon" href="src/img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
 </head>
 
 <body>
@@ -28,11 +34,9 @@
                 <a class="navlink-drop" href="#topsongs">TOP TRACKS</a>
             </div>
         </span>
-
-
-        <a class="navlink" href="#news">NEWS </a>
-        <a class="navlink" href="#tickets">BUY TICKETS</a>
-        <a class="navlink" href="#merch">BUY MERCH</a>
+        <a class="navlink" href="#contacts">CONTACTS</a>
+        <a class="navlink" href="tickets.html" target="_blank">BUY TICKETS</a>
+        <a class="navlink" href="merch.html" target="_blank">BUY MERCH</a>
     </div>
     <div id="mobile-nav" class="navbar navbar-mobile">
         <div>
@@ -52,9 +56,9 @@
             <a class="navlink" href="#members">MEMBERS</a>
             <a class="navlink" href="#albums">ALBUMS</a>
             <a class="navlink" href="#topsongs">TOP TRACKS</a>
-            <a class="navlink" href="#news">NEWS </a>
-            <a class="navlink" href="#tickets">BUY TICKETS</a>
-            <a class="navlink" href="#merch">BUY MERCH</a> -->
+            <a class="navlink" href="#news">CONTACTS </a>
+            <a class="navlink" href="tickets.html" target="_blank">BUY TICKETS</a>
+            <a class="navlink" href="merch.html" target="_blank">BUY MERCH</a> 
         </div>
 
     </div>
@@ -83,7 +87,7 @@
                 where you weren't,"
                 with the same-named stuck phrase. The lyrics, apart from the music, claim to be a plus for their
                 simplicity
-                and how easy it is to listen to
+                and how easy it is to listen to.
             </p>
         </div>
 
@@ -132,7 +136,8 @@
                 <thead class="topSongsThead">
                     <tr style="width: 100%;  font-weight: bolder;">
                         <td>
-                            <div id="sortby" style="width: 100px; text-align: left;">Sort by</div> <!--Fill empty cell-->
+                            <div id="sortby" style="width: 100px; text-align: left;">Sort by</div>
+                            <!--Fill empty cell-->
                         </td>
                         <td class="sort" onclick="sortBySong(data.songs)">Song</td>
                         <td class="sort" onclick="sortByAlbum(data.songs)">Album</td>
@@ -152,24 +157,42 @@
             </table>
             <br>
             <div align="center" class="buttons">
-                <button onclick="showLess(1)">Less</button>
-                <button onclick="showMore(1)">More</button>
+                <button onclick="showLess(1)">Show less</button>
+                <button onclick="showMore(1)">Show more</button>
             </div>
         </div>
 
     </article>
+    <div class="text">
+        <h2 align="center" id="contacts">CONTACTS</h2>
 
+        <p align="center" class="paragraph">Phone: 066-666-66-66</p>
+        <p align="center" class="paragraph">Email: dev777@metel.com</p>
 
-    <footer class="navbar-bot">
-        <a href="https://open.spotify.com/artist/6CjQZyM4LDtXlmAK2EiBRq" target="_blank" class="navlink">SPOTIFY</a>
+        <h2 align="center">NEXT SHOW LOCATION</h2>
+        <div class="popup-container" id="popup-map-container">
+            <div id="map"></div>
+        </div>
+        <p class="paragraph" align="center">Kyiv, club "MonteRay", Prorizna st 8 (Khreschatyk metro)</p>
+    </div>
+
+    <footer class="navbar-bot" align="center">
+        <a href="https://open.spotify.com/artist/6CjQZyM4LDtXlmAK2EiBRq" align="center" target="_blank" class="navlink"
+            style=" border-right:none; float:none">SPOTIFY</a>
+        <a href="https://soundcloud.com/metel777" target="_blank" align="center" class="navlink"
+            style=" border-right:none; float:none">SOUNDCLOUD</a>
     </footer>
 
     <script type="text/javascript" src="src/js/songs.js"></script>
     <script type="text/javascript" src="src/js/index.js"></script>
     <script type="text/javascript" src="src/js/nav.js"></script>
+    <script type="text/javascript" src="src/js/leaflet-b.js"></script>
     <script>
         getAlbums(data.albums);
         getSongs(data.songs);
+
+        document.getElementById("popup-map-container").setAttribute("style", "display: block");
+        createMap(50.448518, 30.5181423);
 
         var slideIndex = 0;
         showSlides();

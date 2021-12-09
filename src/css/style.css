@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic");
+
+
+
+:root {
+    --main-bg-color: white;
+    --trans-bg-color: rgba(255, 255, 255, 0.8);
+}
+
+html {
+    background: url(../img/bground.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.img-gal {
+    width: 30%;
+}
+
+.songslist {
+    width: 80%;
+    height: 80px;
+    margin-left: 10%;
+    border: 1px solid black;
+    margin-bottom: 0px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img {
+    object-fit: cover;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    border: 4px solid var(--trans-bg-color);
+    border-radius: 4px;
+}
+
+.nobordertop::-webkit-scrollbar-thumb {
+    border: 4px solid black;
+    border-radius: 4px;
+}
+
+p,
+h2,
+h3,
+span {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 50;
+}
+
+#topsongs-table {
+    text-align: center;
+    display: block;
+    font-family: 'Comfortaa', cursive;
+    font-size: 15px;
+    font-weight: 50;
+    width: 300px;
+    color: #000;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+}
+
+.topSongsThead {
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sort:hover {
+    color: red;
+}
+
+.sort {
+    user-select: none;
+}
+
+#topsongs-table tr td:nth-child(2) {
+    width: 33%
+}
+
+#topsongs-table tr td:nth-child(3) {
+    width: 33%
+}
+
+#topsongs-table tr td:nth-child(4) {
+    width: 33%
+}
+
+.inlinediv {
+    display: inline;
+}
+
+.artist-caption {
+    text-align: center;
+    display: inline-block;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    font-weight: 50;
+    width: 300px;
+    color: #000;
+}
+
+.paragraph {
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.podmost-gif {
+    left: 0;
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+
+.navbar {
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+.mySlides {
+    display: none;
+    overflow: auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+.slideImg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.slideshow-container {
+    object-fit: cover;
+    position: relative;
+    margin: auto;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navlink {
+    border-right: 2px solid var(--main-bg-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-size: 35px;
+    float: left;
+    display: block;
+    color: var(--main-bg-color);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.text {
+    line-height: 19pt;
+    background-color: var(--trans-bg-color);
+    position: relative;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.player {
+    background-color: var(--trans-bg-color);
+    position: relative;
+    width: 100%;
+    background-color: black;
+}
+
+.nobordertop {
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: auto;
+    height: 350px;
+    overflow-y: hidden;
+}
+
+#albumsCarousel {
+    height: 380px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.noborder {
+    margin: 0;
+}
+
+#clip1 {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+button {
+    color: var(--main-bg-color);
+    background-color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 361px;
+    width: auto;
+    background-color: black;
+    border-right: 2px solid var(--main-bg-color);
+    border-left: 2px solid var(--main-bg-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--main-bg-color);
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial', sans-serif;
+    font-size: 35px;
+    float: none;
+    color: var(--main-bg-color);
+    text-align: left;
+    padding: 14px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--main-bg-color);
+}
+
+video {
+    overflow: auto;
+}
+
+
+.navbar-bot {
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.navbar-bot a:hover {
+    color: red;
+}
+
+@media screen and (min-width: 786px) {
+    .navbar-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .navbar-pc .navlink.title {
+        display: none;
+    }
+
+    .dropdown-content {
+        left: 67px;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .albumcover {
+        width: 50px;
+        height: 50px;
+    }
+    #sortby{
+        width: 50px;
+    }
+    table > * {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .slideImg {
+        width: 300px;
+        height: 150px;
+    }
+
+    video {
+        width: 300px;
+        height: 200px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        transition: .7s;
+    }
+
+    .navbar-mobile .nav-links {
+        display: none;
+    }
+
+    .navbar.active {
+        height: 500px;
+        transition: .7s;
+    }
+
+    .navbar.active .nav-links {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%, 0);
+    }
+
+    .navbar.active .navlink {
+        border: none;
+    }
+
+    .navbar-pc {
+        display: none;
+    }
+
+    .box {
+        width: 10%;
+        height: 50%;
+        /* float: left; */
+    }
+
+    .icon {
+        position: relative;
+        top: -36%;
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        cursor: pointer;
+    }
+
+    .icon {
+        stroke: #FFFFFF;
+        opacity: .95;
+    }
+}

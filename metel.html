@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--metadata-->
+    <meta name="description" content="Fan page of Ukrainian underground punk band Metel" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <title>Metelism</title>
+    <!--resourses-->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="src/img/icon.jpg" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-pc">
+        <img class="podmost-gif" src="src/img/icon.png" alt="NO ICON" />
+        <span class="navlink title">МЕТЕЛЬ FANPAGE</span>
+        <!-- <a class="navlink" href="#gallery">GALLERY</a> -->
+
+        <span class="dropdown navlink">
+            GALLERY
+            <div class="dropdown-content">
+                <a class="navlink-drop" href="#members">MEMBERS</a><br>
+                <a class="navlink-drop" href="#albums">ALBUMS</a><br>
+                <a class="navlink-drop" href="#topsongs">TOP TRACKS</a>
+            </div>
+        </span>
+
+
+        <a class="navlink" href="#news">NEWS </a>
+        <a class="navlink" href="#tickets">BUY TICKETS</a>
+        <a class="navlink" href="#merch">BUY MERCH</a>
+    </div>
+    <div id="mobile-nav" class="navbar navbar-mobile">
+        <div>
+            <img class="podmost-gif" src="src/img/icon.png" alt="NO ICON" />
+        </div>
+
+        <div id="b1" class="box burger" onclick="toggleNav()">
+            <svg id="i1" class="icon" viewBox="0 0 100 100">
+                <path id="top-line-1" d="M30,37 L70,37 Z"></path>
+                <path id="middle-line-1" d="M30,50 L70,50 Z"></path>
+                <path id="bottom-line-1" d="M30,63 L70,63 Z"></path>
+            </svg>
+        </div>
+
+
+        <div class="nav-links">
+            <a class="navlink" href="#members">MEMBERS</a>
+            <a class="navlink" href="#albums">ALBUMS</a>
+            <a class="navlink" href="#topsongs">TOP TRACKS</a>
+            <a class="navlink" href="#news">NEWS </a>
+            <a class="navlink" href="#tickets">BUY TICKETS</a>
+            <a class="navlink" href="#merch">BUY MERCH</a> -->
+        </div>
+
+    </div>
+
+    <article class="main">
+
+        <div class="text">
+            <h2 class="paragraph">BRIEF INFO</h2>
+            <p class="paragraph">
+                The leader and founder of Metel is named Jan Blok.
+                He is a skater, designer, musician and just a well-known character on the net.
+                He is a little over twenty and, in addition to a dozen tattoos all over his body, he managed to make
+                several successful projects.
+                The first of them is the PODMOST clothing brand, around which a whole community has gathered.
+                Jan came up with it when he was still a schoolboy, when he began to make prints on T-shirts
+                and sell them to friends and friends of friends.
+                Previously, Yan Blok read rap and skated on the board, but then he discovered Grazhdanskaya Oborona and,
+                inspired by Yegor Letov's texts, decided to rebuild himself into a new (or rather old) way.
+                The punk they play can be played by you too. It is not worth talking about arrangements and scattering
+                too much,
+                since there is nothing supernatural there, but the point is that this description of a lot of other
+                groups could immediately
+                destroy or hammer into the bottom of the musical world, they are not.
+                That "Verkhovod" (2016), that "Dancing in the Black Dome" (2017) are performed in the same manner
+                - dirty, garage, primitive, but melodic punk. The debut release pulled out the opening track "I was
+                where you weren't,"
+                with the same-named stuck phrase. The lyrics, apart from the music, claim to be a plus for their
+                simplicity
+                and how easy it is to listen to
+            </p>
+        </div>
+
+        <div class="slideshow-container player" align="center" style="margin-top: 0px">
+            <div class="mySlides fade">
+                <img class="slideImg" src="src/img/sostav/yanslide.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="slideImg" src="src/img/bground.jpg">
+            </div>
+        </div>
+
+
+
+        <div class="text" align="center">
+            <h2 align="center" class="paragraph" id="members">BAND MEMBERS</h2>
+            <div class="gallery">
+                <span class="img-gal"><img width="300" height="300" src="src/img/sostav/yanblock.webp"
+                        alt="NO ICON" /></span>
+                <span class="img-gal"><img width="300" height="300" src="src/img/sostav/lasta.jpg"
+                        alt="NO ICON" /></span>
+                <span class="img-gal"><img width="300" height="300" src="src/img/sostav/drummer.jpg"
+                        alt="NO ICON" /></span>
+                <span class="img-gal"><img width="300" height="300" src="src/img/sostav/gitaraNekit.jpg"
+                        alt="NO ICON" /></span>
+            </div>
+            <h3 align="center" class="paragraph">JAN BLOCK, LASTA, ISKANDER, NEKIT METALUGA</h3>
+        </div>
+
+        <div class="text" align="center">
+            <h2 align="center" class="paragraph" id="albums">ALBUMS & SINGLES</h2>
+            <div id="albumsGallery" class="gallery">
+
+            </div>
+            <h3 align="center" class="paragraph" id="albumsSingles"></h3>
+        </div>
+
+
+        <div class="text">
+            <h2 align="center" id="topsongs">TOP SONGS</h2>
+            <p align="center" class="paragraph">
+                Please note that this top is based just on my opinion.
+            </p>
+            <table id="topsongs-table">
+                <thead class="topSongsThead">
+                    <tr style="width: 100%;  font-weight: bolder;">
+                        <td>
+                            <div id="sortby" style="width: 100px; text-align: left;">Sort by</div> <!--Fill empty cell-->
+                        </td>
+                        <td class="sort" onclick="sortBySong(data.songs)">Song</td>
+                        <td class="sort" onclick="sortByAlbum(data.songs)">Album</td>
+                        <td class="sort" onclick="sortByDate(data.songs)">Released at</td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!--example-->
+                    <tr>
+                        <td><img width="100" style="display: none;" height="100" src="src/img/sostav/gitaraNekit.jpg"
+                                alt="NO ICON" /></td>
+                        <td>Test</td>
+                        <td>Testing</td>
+                        <td>2077</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <div align="center" class="buttons">
+                <button onclick="showLess(1)">Less</button>
+                <button onclick="showMore(1)">More</button>
+            </div>
+        </div>
+
+    </article>
+
+
+    <footer class="navbar-bot">
+        <a href="https://open.spotify.com/artist/6CjQZyM4LDtXlmAK2EiBRq" target="_blank" class="navlink">SPOTIFY</a>
+    </footer>
+
+    <script type="text/javascript" src="src/js/songs.js"></script>
+    <script type="text/javascript" src="src/js/index.js"></script>
+    <script type="text/javascript" src="src/js/nav.js"></script>
+    <script>
+        getAlbums(data.albums);
+        getSongs(data.songs);
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <script>
+        function toggleNav() {
+            let nav = document.getElementById("mobile-nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
